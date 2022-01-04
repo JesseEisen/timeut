@@ -14,10 +14,9 @@ def convertToMs2(timeStr):
 
 a = convertToMs("2021-01-04 18:22:21,78")
 b = convertToMs("2021-01-04 18:22:21,919")
-print(round(b-a, 4))
+diff1 = b-a
 
 a = convertToMs2("2021-01-04 18:22:21,078")
 b = convertToMs2("2021-01-04 18:22:21,919")
-print(round(b-a, 4))
-
-
+diff2 = b-a
+print(f"{diff1:^15.3f}\n{diff2:^15.3f}")
